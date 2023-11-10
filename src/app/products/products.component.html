@@ -1,0 +1,28 @@
+<h1>Products</h1>
+
+<body>
+  <div class="alert alert-warning" role="alert">
+    Each product are available in S, M, L, XL
+  </div>
+  <div class="card-grid">
+    <div *ngFor="let product of products; let i = index">
+      <div class="card" style="width: 18rem;">
+        <img src= {{product.path}} class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">Localisation de l'image : <br /> {{ product.localisation }}</p>
+          <a class="btn btn-primary" (click)="updateShowDetails(i)">More Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+  <div *ngIf="showDetails" class="info_card" style="width: 18rem;">
+    <button type="button" class="btn-close" aria-label="Close" (click)="closeDetails()"></button>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">  <b> References Informations  </b> </li>
+      <li class="list-group-item">Product ID : {{moreDetailsID}} </li>
+      <li class="list-group-item">Internal product name : {{moreDetailsIntName}}</li>
+    </ul>
+  </div>

@@ -1,0 +1,66 @@
+<body>
+  <div class="container">
+    <h1>Contact me !</h1>
+      <form [formGroup]="form">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Phone Number *</label>
+            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" formControlName="phoneNumber">
+            <div class="form-text" id="basic-addon4">Only French phone numbers available</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Email *</label>
+            <input type="text" class="form-control" id="email" name="email" formControlName="email">
+          </div>
+        
+          <p>Are you professional?</p>
+        
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="profesional" value="yes">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Yes!
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="profesional" value="iwouldlike">
+            <label class="form-check-label" for="flexRadioDefault1">
+              I would like
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="profesional" value="no">
+            <label class="form-check-label" for="flexRadioDefault2">
+              No ...
+            </label>
+          </div>
+        
+          <select class="form-select" formControlName="topic">
+            <option value="">What is your question about ? *</option>
+            <option value="purchase">A purchase</option>
+            <option value="precision">A product precision</option>
+            <option value="other">Other</option>
+          </select>
+        
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Give me precisions *</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" formControlName="precisions" (input)="updateMessage(); updatePrecisionCharacterCount()"></textarea>
+            <div class="form-text" id="basic-addon4">Your message must be between 10 and 2000 caracters</div>
+            <div class="counter" id="basic-addon4">{{precisionCharacterCounter}} / 2000</div>
+          </div>
+        
+          <button type="submit" [disabled]="!form.valid" (click)="validation()">Validate</button>
+        </form>
+  </div>
+  
+  <div *ngIf = "showMessageDetails" class="alert alert-success" role="alert">
+    <button type="button" class="btn-close" aria-label="Close" (click) = closeDetails() ></button>
+    <h4 class="alert-heading">Done!</h4>
+    <p>Your message has been sent to our services. We will contact you as soon as possible !</p>
+    <hr>
+    <p class="mb-0"> <b>Here is your message :</b></p>
+    <p class="mb-0"> Your phone number : {{phoneNumber}} </p>
+    <p class="mb-0"> Your email : {{email}} </p>
+    <p class="mb-0"> Your question is about : {{questionTopic}} </p>
+    <p class="mb-0"> Your message : {{message}} </p>
+  </div>
+  
+</body>

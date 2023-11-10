@@ -1,0 +1,27 @@
+<h1> Orders </h1>
+
+<body>
+<div class="card-grid">
+  <div *ngFor="let order of orders; let i = index">
+    <div class="card">
+      <h5 class="card-header"> Order # {{order.id}}</h5>
+      <div class="card-body">
+        <h5 class="card-title">Product : {{ order.product_name }}</h5>
+        <p class="card-text">User : {{order.user_name}}</p>
+        <p class="card-text">Quantity : {{order.quantity}}</p>
+        <a class="btn btn-primary" (click)="updateShowDetails(i)">More Details</a>
+      </div>
+    </div>  
+  </div>
+</div>
+
+<div *ngIf="showDetails" class="info_card" style="width: 18rem;">
+  <button type="button" class="btn-close" aria-label="Close" (click)="closeDetails()"></button>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">  <b> References Informations  </b> </li>
+    <li class="list-group-item">Order ID :  {{moreDetailsID}}</li>
+    <li class="list-group-item">Size : {{moreDetailsSize}} </li>
+  </ul>
+</div>
+
+</body>

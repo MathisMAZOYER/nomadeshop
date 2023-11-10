@@ -1,0 +1,26 @@
+<h1>Users</h1>
+
+<body>
+<div class="card-grid">
+    <div *ngFor="let user of users; let i = index">
+      <div class="card">
+        <h5 class="card-header"> User # {{user.id}}</h5>
+        <div class="card-body">
+          <h5 class="card-title">Name : {{user.name}}</h5>
+          <p class="card-text">User : {{user.firstname}}</p>
+          <p class="card-text">Mail adress : {{user.email}}</p>
+          <a class="btn btn-primary" (click)="updateShowDetails(i)">More Details</a>
+        </div>
+      </div>  
+    </div>
+  </div>
+</body>
+
+  <div *ngIf="showDetails" class="info_card" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+      <button type="button" class="btn-close" aria-label="Close" (click)="closeDetails()" ></button>
+      <li class="list-group-item"> <b> Client Informations </b></li>
+      <li class="list-group-item">Phone Number : {{moreDetailsPhone}} </li>
+      <li class="list-group-item">Client direction : <br /> {{moreDetailsDirection}} <br /> {{moreDetailsZipCode}} {{moreDetailsCity}}</li>
+    </ul>
+  </div>

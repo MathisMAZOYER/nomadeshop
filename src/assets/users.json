@@ -1,0 +1,113 @@
+  [
+    {
+      "id": 1,
+      "name": "Dupont",
+      "firstname": "Jean",
+      "email": "jean.dupont@example.com",
+      "pseudo": "jean.dupont",
+      "phone": "01 23 45 67 89",
+      "direction": "123 Rue de la Paix",
+      "zip_code": "75000",
+      "city": "Paris"
+    },
+    {
+      "id": 2,
+      "name": "Lefebvre",
+      "firstname": "Marie",
+      "email": "marie.lefebvre@example.com",
+      "pseudo": "marie_l",
+      "phone": "02 34 56 78 90",
+      "direction": "456 Avenue des Champs-Élysées",
+      "zip_code": "75008",
+      "city": "Paris"
+    },
+    {
+      "id": 3,
+      "name": "Martin",
+      "firstname": "Pierre",
+      "email": "pierre.martin@example.com",
+      "pseudo": "pierremartin",
+      "phone": "03 45 67 89 01",
+      "direction": "789 Boulevard Saint-Germain",
+      "zip_code": "75007",
+      "city": "Paris"
+    },
+    {
+      "id": 4,
+      "name": "Dubois",
+      "firstname": "Isabelle",
+      "email": "isabelle.dubois@example.com",
+      "pseudo": "isadubois",
+      "phone": "04 56 78 90 12",
+      "direction": "234 Rue du Faubourg Saint-Honoré",
+      "zip_code": "75001",
+      "city": "Paris"
+    },
+    {
+      "id": 5,
+      "name": "Roux",
+      "firstname": "Luc",
+      "email": "luc.roux@example.com",
+      "pseudo": "luc_roux",
+      "phone": "05 67 89 01 23",
+      "direction": "567 Rue de la République",
+      "zip_code": "69001",
+      "city": "Lyon"
+    },
+    {
+      "id": 6,
+      "name": "Durand",
+      "firstname": "Céline",
+      "email": "celine.durand@example.com",
+      "pseudo": "celined",
+      "phone": "06 78 90 12 34",
+      "direction": "789 Avenue de la Liberté",
+      "zip_code": "13001",
+      "city": "Marseille"
+    },
+    {
+      "id": 7,
+      "name": "Girard",
+      "firstname": "Michel",
+      "email": "michel.girard@example.com",
+      "pseudo": "michel_g",
+      "phone": "07 89 01 23 45",
+      "direction": "123 Rue de la Cathédrale",
+      "zip_code": "67000",
+      "city": "Strasbourg"
+    },
+    {
+      "id": 8,
+      "name": "Leroy",
+      "firstname": "Sophie",
+      "email": "sophie.leroy@example.com",
+      "pseudo": "sophiel",
+      "phone": "08 90 12 34 56",
+      "direction": "456 Avenue de la Gare",
+      "zip_code": "33000",
+      "city": "Bordeaux"
+    },
+    {
+      "id": 9,
+      "name": "Moreau",
+      "firstname": "Thomas",
+      "email": "thomas.moreau@example.com",
+      "pseudo": "thomasm",
+      "phone": "09 12 34 56 78",
+      "direction": "789 Rue du Commerce",
+      "zip_code": "59000",
+      "city": "Lille"
+    },
+    {
+      "id": 10,
+      "name": "Petit",
+      "firstname": "Julie",
+      "email": "julie.petit@example.com",
+      "pseudo": "juliep",
+      "phone": "01 34 56 78 90",
+      "direction": "234 Avenue du Soleil",
+      "zip_code": "06000",
+      "city": "Nice"
+    }
+  ]
+

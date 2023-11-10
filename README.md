@@ -1,5 +1,33 @@
 # Nomadeshop
 
+Nomadeshop is a university project that simulates an e-commerce site specializing in the sale of photos. It features an interface with four main windows: Products, Users, Orders, and Contact.
+
+# Autor
+Mathis MAZOYER
+
+## Features
+
+### Products
+
+- Displays a list of photos available for purchase.
+- Allows users to view details for each photo.
+
+### Users
+
+- Presents a list of users registered on the site.
+- Displays details for each user, wich are Phone number and direction.
+
+### Orders
+
+- Displays orders placed by users.
+- Provides details for each order, including the purchased product, quantity, and size.
+
+### Contact
+
+- Provides contact information for users with questions or concerns.
+- /!\ The form is available to be sent if all of the fields are correctly formatted.
+
+This project is graphically designed with Bootstrap elements.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
 ## Development server
